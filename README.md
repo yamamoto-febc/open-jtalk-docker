@@ -5,7 +5,7 @@ Open JTalk + hts engine用イメージです。
 
 ## `Dockerfile` links
 
-[`latest`](https://github.com/yamamoto-febc/openjtalk-docker)[(Dockerfile)](https://github.com/yamamoto-febc/openjtalk-docker)
+[`latest`](https://github.com/yamamoto-febc/open-jtalk-docker)[(Dockerfile)](https://github.com/yamamoto-febc/open-jtalk-docker)
 
 ## 使い方
 
@@ -25,6 +25,7 @@ echo "合成したい文字" | docker run -i --rm yamamotofebc/open_jtalk > crea
   * $JTALK_VOICE_FILE : 音声ファイル(htsvoice) : デフォルトは`""`
   * $JTALK_VOICE_TYPE : 音声ファイルタイプ(normal / angry / bashful / happy / sadのいずれか) : デフォルトは`normal`
   * $JTALK_OUTPUT : 出力先パス : デフォルトは`標準出力`
+  * $JTALK_OPTIONS : open_jtalkコマンドのオプション : デフォルトは`-s 48000 -s 48000 -p 300 -u 0.5 -jm 0.5 -jf 0.5`
 
     **$JTALK_VOICE_FILEが指定されている場合は$JTALK_VOICE_TYPEは無視されます**
 

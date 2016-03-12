@@ -4,3 +4,4 @@ open_jtalk:
     JTALK_VOICE_FILE: ""
     JTALK_VOICE_TYPE: "normal"
     JTALK_OUTPUT: ""
+    JTALK_OPTIONS: "-s 48000 -s 48000 -p 300 -u 0.5 -jm 0.5 -jf 0.5"
