@@ -24,5 +24,10 @@ RUN curl -L http://sourceforge.net/projects/mmdagent/files/MMDAgent_Example/MMDA
 
 COPY docker-entrypoint.sh /jtalk/entrypoint.sh
 
+ENV JTALK_VOICE_FILE="" \
+    JTALK_VOICE_TYPE=normal \
+    JTALK_OPTION="" \
+    JTALK_OUTPUT=""
+
 ENTRYPOINT ["/jtalk/entrypoint.sh"]
 CMD ["-h"]

@@ -1,0 +1,6 @@
+open_jtalk:
+  image: yamamotofebc/open_jtalk
+  environment:
+    JTALK_VOICE_FILE: ""
+    JTALK_VOICE_TYPE: "normal"
+    JTALK_OUTPUT: ""
